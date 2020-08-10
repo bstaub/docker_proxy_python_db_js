@@ -28,6 +28,15 @@ http://127.0.0.1/admin  (deny)
 sudo cat /etc/letsencrypt/live/webapp.ddns.net/fullchain.pem /etc/letsencrypt/live/webapp.ddns.net/privkey.pem | sudo tee ~/VisualStudioCode/docker_proxy_python_db_js/proxy/ha-proxy/webapp.ddns.net.pem
 ```
 
+## Test with for node backend server (test1.cfg, test2.cft, test3.cfg)
+```
+docker run -p 6001:9999 -d -e APPID=6001 bstaub/node-proxytest-server
+docker run -p 6002:9999 -d -e APPID=6002 bstaub/node-proxytest-server
+docker run -p 6003:9999 -d -e APPID=6003 bstaub/node-proxytest-server
+docker run -p 6004:9999 -d -e APPID=6004 bstaub/node-proxytest-server
+```
+
+
 ## Example SSL Config with http to https redirect
 ```
 flaskblog_noip_ssl.cfg

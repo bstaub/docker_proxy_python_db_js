@@ -22,6 +22,8 @@ docker container stop xxx
 docker container kill xxx
 docker container rm xxx
 docker container ls -a
+docker images
+docker image rm xxx
 ```
 ## Proxy Test URL's
 ```
@@ -33,3 +35,4 @@ http://localhost:6001/app2
 
 http://localhost:6001/admin
 ```
+
