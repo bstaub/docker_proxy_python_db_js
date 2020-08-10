@@ -32,6 +32,7 @@ sudo cat /etc/letsencrypt/live/webapp.ddns.net/fullchain.pem /etc/letsencrypt/li
 ```
 flaskblog_noip_ssl.cfg
 haproxy -f flaskblog_noip_ssl.cfg
+haproxy -f flaskblog_noip_ssl_h2.cfg   (https2 mode)
 ```
 
 ## Links
